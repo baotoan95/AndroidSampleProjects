@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WikiCountry</string>
+    <string name="title_activity_country_detail">CountryDetailActivity</string>
+</resources>

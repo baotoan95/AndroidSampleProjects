@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baotoan.btplayer.PlayerActivity">
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="android.support.v7.widget.Toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#c7bdbd"
+        android:id="@+id/tool_bar_player" />
+
+    <RelativeLayout
+        android:id="@+id/controller"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#c7bdbd"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/play"
+            android:id="@+id/btn_play"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            app:srcCompat="@drawable/backward"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:id="@+id/btn_backward"
+            android:layout_alignTop="@+id/btn_play"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="50dp"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/next"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp"
+            android:id="@+id/btn_next"
+            android:layout_alignTop="@+id/btn_play"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/increase"
+            android:id="@+id/btn_increase"
+            android:layout_alignTop="@+id/btn_next"
+            android:layout_toLeftOf="@+id/btn_next"
+            android:layout_toStartOf="@+id/btn_next"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/decrease"
+            android:id="@+id/btn_descrease"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/btn_backward"
+            android:layout_toRightOf="@+id/btn_backward"
+            android:layout_toEndOf="@+id/btn_backward" />
+    </RelativeLayout>
+
+    <ImageView
+        app:srcCompat="@drawable/cassetle"
+        android:layout_below="@+id/tool_bar_player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/img_player"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_duration"
+        android:layout_above="@+id/controller"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seek_duration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/lbl_cr_duration"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:text="00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_duration"
+        android:layout_alignBaseline="@+id/lbl_cr_duration"
+        android:layout_alignBottom="@+id/lbl_cr_duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/lbl_title"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="BTPlayer"
+        android:layout_below="@+id/img_player"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="BTIT95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/lbl_artist"
+        android:textAlignment="center" />
+
+</RelativeLayout>
