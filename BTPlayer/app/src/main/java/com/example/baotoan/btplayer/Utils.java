@@ -24,6 +24,9 @@ public class Utils {
                 return name.endsWith(".mp3") || name.endsWith(".MP3");
             }
         });
+        if(null == files) {
+            return songs;
+        }
         // Add info to song list
         MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
 

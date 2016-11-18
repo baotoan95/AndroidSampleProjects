@@ -22,6 +22,9 @@ public class SongListAdapter extends BaseAdapter {
     public SongListAdapter(Context context, ArrayList<Song> songs) {
         this.context = context;
         this.songs = songs;
+        if(this.songs == null) {
+            this.songs = new ArrayList<>();
+        }
     }
 
     @Override
