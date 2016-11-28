@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_item" android:icon="@drawable/add" android:title="New" app:showAsAction="always"/>
+    <item android:id="@+id/save_item" android:icon="@drawable/save" android:title="Save" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/attach_item" android:icon="@drawable/attach" android:title="Attach" app:showAsAction="never"/>
+    <item android:id="@+id/setting_item" android:icon="@drawable/setting" android:title="Setting" app:showAsAction="never"/>
+</menu>

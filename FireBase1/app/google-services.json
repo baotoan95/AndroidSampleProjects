@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "992395087173",
+    "firebase_url": "https://fir-fa79e.firebaseio.com",
+    "project_id": "fir-fa79e",
+    "storage_bucket": "fir-fa79e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992395087173:android:907532e3f1aa5923",
+        "android_client_info": {
+          "package_name": "com.example.baotoan.firebase1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992395087173-6vkev03seiojds4fqg11kq4r75n397nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgsujj5tyF7PfMJesCNntBk8eYHJTEgEE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

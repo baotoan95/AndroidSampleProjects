@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "580259183201",
+    "firebase_url": "https://fbauthdemo-708df.firebaseio.com",
+    "project_id": "fbauthdemo-708df",
+    "storage_bucket": "fbauthdemo-708df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580259183201:android:c799e43d3623bbdb",
+        "android_client_info": {
+          "package_name": "com.example.baotoan.firebaseauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580259183201-ab45a92f1kfp9hp8fd89gjqaic6iqe2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_zW9wJL6dSN_4XiSxfji7IB7xUGvz_qk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

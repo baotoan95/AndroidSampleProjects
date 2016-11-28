@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConvertApp</string>
+    
+    <string-array name="unit">
+        <item>Meter</item>
+        <item>Mile</item>
+        <item>Cm</item>
+        <item>Inch</item>
+        <item>Yd</item>
+    </string-array>
+</resources>
