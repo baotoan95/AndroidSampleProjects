@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baotoan.animationsample.MainActivity">
+
+    <Button
+        android:text="Fade In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_fade_in" />
+
+    <Button
+        android:text="Face out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_fade_in"
+        android:layout_toEndOf="@+id/btn_fade_in"
+        android:id="@+id/btn_fade_out" />
+
+    <Button
+        android:text="Zoom In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_fade_out"
+        android:layout_toEndOf="@+id/btn_fade_out"
+        android:id="@+id/btn_zoom_in" />
+
+    <Button
+        android:text="Zoom Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_zoom_in"
+        android:layout_toEndOf="@+id/btn_zoom_in"
+        android:id="@+id/btn_zoom_out" />
+
+    <Button
+        android:text="Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fade_in"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_repeat" />
+
+    <Button
+        android:text="Move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fade_out"
+        android:layout_toRightOf="@+id/btn_repeat"
+        android:layout_toEndOf="@+id/btn_repeat"
+        android:id="@+id/btn_move" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_zoom_in"
+        android:layout_toRightOf="@+id/btn_fade_out"
+        android:layout_toEndOf="@+id/btn_fade_out"
+        android:id="@+id/btn_back" />
+
+    <Button
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_rotate"
+        android:layout_alignBaseline="@+id/btn_back"
+        android:layout_alignBottom="@+id/btn_back"
+        android:layout_toRightOf="@+id/btn_zoom_in"
+        android:layout_toEndOf="@+id/btn_zoom_in" />
+
+    <Button
+        android:text="Move Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_repeat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_move_up" />
+
+    <Button
+        android:text="Move Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_move"
+        android:layout_toRightOf="@+id/btn_move_up"
+        android:layout_toEndOf="@+id/btn_move_up"
+        android:id="@+id/btn_move_down" />
+
+    <Button
+        android:text="Sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_back"
+        android:layout_toRightOf="@+id/btn_move_down"
+        android:layout_toEndOf="@+id/btn_move_down"
+        android:id="@+id/btn_sequence" />
+
+    <Button
+        android:text="SAME TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_same_time"
+        android:layout_below="@+id/btn_rotate"
+        android:layout_toRightOf="@+id/btn_sequence"
+        android:layout_toEndOf="@+id/btn_sequence" />
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        app:srcCompat="@drawable/ball"
+        android:id="@+id/image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
+
+</RelativeLayout>
