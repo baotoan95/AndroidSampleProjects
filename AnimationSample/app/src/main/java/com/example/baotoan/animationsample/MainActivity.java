@@ -11,9 +11,11 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnFadeIn, btnFadeOut, btnZoomIn,
             btnZoomOut, btnRepeat, btnMoveUp, btnMoveDown,
-            btnBack, btnRotate, btnSequence, btnSameTime;
+            btnMoveLeft, btnMoveRight, btnRotate, btnSequence, btnSameTime;
     private ImageView imageView;
-    private Animation animFadeIn, animFadeOut, aniZoomIn;
+    private Animation animFadeIn, animFadeOut, animZoomIn,
+            animZoomOut, animRepeat, animMoveLeft, animMoveRight, animRotate,
+            animMoveUp, animMoveDown, animSequence, animSameTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +27,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnZoomIn = (Button) findViewById(R.id.btn_zoom_in);
         btnZoomOut = (Button) findViewById(R.id.btn_zoom_out);
         btnRepeat = (Button) findViewById(R.id.btn_repeat);
-        btnBack = (Button) findViewById(R.id.btn_back);
+        btnMoveLeft = (Button) findViewById(R.id.btn_move_left);
+        btnMoveRight = (Button) findViewById(R.id.btn_move_right);
         btnRotate = (Button) findViewById(R.id.btn_rotate);
         btnMoveUp = (Button) findViewById(R.id.btn_move_up);
         btnMoveDown = (Button) findViewById(R.id.btn_move_down);
         btnSequence = (Button) findViewById(R.id.btn_sequence);
         btnSameTime = (Button) findViewById(R.id.btn_same_time);
+
         imageView = (ImageView) findViewById(R.id.image_view);
 
         btnFadeIn.setOnClickListener(this);
@@ -38,23 +42,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnZoomIn.setOnClickListener(this);
         btnZoomOut.setOnClickListener(this);
         btnRepeat.setOnClickListener(this);
-        btnBack.setOnClickListener(this);
+        btnMoveLeft.setOnClickListener(this);
+        btnMoveRight.setOnClickListener(this);
         btnRotate.setOnClickListener(this);
         btnMoveUp.setOnClickListener(this);
         btnMoveDown.setOnClickListener(this);
         btnSequence.setOnClickListener(this);
         btnSameTime.setOnClickListener(this);
 
-        animFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
-        animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
+        animFadeIn = AnimationUtils.loadAnimation(this, R.anim.anim_fade_in);
+        animFadeOut = AnimationUtils.loadAnimation(this, R.anim.anim_fade_out);
+        animZoomIn = AnimationUtils.loadAnimation(this, R.anim.anim_zoom_in);
+        animZoomOut = AnimationUtils.loadAnimation(this, R.anim.anim_zoom_out);
+        animRepeat = AnimationUtils.loadAnimation(this, R.anim.anim_repeat);
+        animMoveLeft = AnimationUtils.loadAnimation(this, R.anim.anim_move_left);
+        animMoveRight = AnimationUtils.loadAnimation(this, R.anim.anim_move_right);
+        animMoveUp = AnimationUtils.loadAnimation(this, R.anim.anim_move_up);
+        animMoveDown = AnimationUtils.loadAnimation(this, R.anim.anim_move_down);
+        animRotate = AnimationUtils.loadAnimation(this, R.anim.anim_rotate);
+        animSequence = AnimationUtils.loadAnimation(this, R.anim.anim_sequence);
+        animSameTime = AnimationUtils.loadAnimation(this, R.anim.anim_same_time);
     }
 
     @Override
     public void onClick(View view) {
-        if(view == btnFadeIn) {
-            imageView.startAnimation(animFadeIn);
-        } else if(view == btnFadeOut) {
-            imageView.startAnimation(animFadeOut);
+        switch (view.getId()) {
+            case R.id.btn_fade_in: imageView.startAnimation(animFadeIn); break;
+            case R.id.btn_fade_out: imageView.startAnimation(animFadeOut); break;
+            case R.id.btn_zoom_in: imageView.startAnimation(animZoomIn); break;
+            case R.id.btn_zoom_out: imageView.startAnimation(animZoomOut); break;
+            case R.id.btn_repeat: imageView.startAnimation(animRepeat); break;
+            case R.id.btn_move_left: imageView.startAnimation(animMoveLeft); break;
+            case R.id.btn_move_right: imageView.startAnimation(animMoveRight); break;
+            case R.id.btn_rotate: imageView.startAnimation(animRotate); break;
+            case R.id.btn_move_up: imageView.startAnimation(animMoveUp); break;
+            case R.id.btn_move_down: imageView.startAnimation(animMoveDown); break;
+            case R.id.btn_sequence: imageView.startAnimation(animSequence); break;
+            case R.id.btn_same_time: imageView.startAnimation(animSameTime); break;
         }
+
     }
 }
