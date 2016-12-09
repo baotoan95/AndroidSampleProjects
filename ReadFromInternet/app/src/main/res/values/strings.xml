@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">ReadFromInternet</string>
 </resources>
+=======
+<resources>
+    <string name="app_name">ReadFromInternet</string>
+</resources>
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab

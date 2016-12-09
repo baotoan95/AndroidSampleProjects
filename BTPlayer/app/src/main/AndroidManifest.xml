@@ -4,7 +4,10 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
+=======
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 
     <application
         android:allowBackup="true"

@@ -25,5 +25,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
+<<<<<<< HEAD
     testCompile 'junit:junit:4.12'
+=======
+    compile 'com.google.android.gms:play-services-ads:9.8.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:25.0.0'
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 }

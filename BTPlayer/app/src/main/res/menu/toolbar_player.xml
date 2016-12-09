@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<<<<<<< HEAD
+=======
+    <item android:id="@+id/playonline" android:icon="@drawable/play_online" android:title="Play online" app:showAsAction="always"/>
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
     <item android:id="@+id/playlist" android:icon="@drawable/playlist" android:title="Playlist" app:showAsAction="always"/>
 
 </menu>

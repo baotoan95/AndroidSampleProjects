@@ -6,11 +6,20 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+=======
+import android.media.MediaMetadataRetriever;
+import android.media.MediaPlayer;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -21,12 +30,18 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+=======
+import org.w3c.dom.Text;
+
+import java.io.IOException;
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 import java.util.ArrayList;
 
 public class PlayerActivity extends AppCompatActivity implements View.OnClickListener, SeekBar.OnSeekBarChangeListener, MediaPlayer.OnCompletionListener {
@@ -87,9 +102,12 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
 
         seekDuration.setOnSeekBarChangeListener(this);
         mediaPlayer.setOnCompletionListener(this);
+<<<<<<< HEAD
 
 //        new ReadFromInternet().execute("http://mp3.zing.vn/album/Shake-It-Single-Diep-Lam-Anh-Mr-T/ZOU7W86W.html");
 
+=======
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
         play();
     }
 
@@ -157,7 +175,11 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
 
                 // Play music
                 mediaPlayer.reset();
+<<<<<<< HEAD
                 mediaPlayer.setDataSource(song.getPath());
+=======
+                mediaPlayer.setDataSource("http://zmp3-mp3-s1.zmp3-bdhcm-1.za.zdn.vn/ca048e0086446f1a3655/7719081858336067360?key=7pYmwsNFFwynxdgE5Dvrug&expires=1479327235");
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
                 mediaPlayer.prepare();
                 mediaPlayer.start();
 
@@ -257,6 +279,7 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
         }
         play();
     }
+<<<<<<< HEAD
 
     class ReadFromInternet extends AsyncTask<String, Integer, String> {
 
@@ -293,4 +316,6 @@ public class PlayerActivity extends AppCompatActivity implements View.OnClickLis
             Log.i("Link", s);
         }
     }
+=======
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 }

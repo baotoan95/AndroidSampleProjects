@@ -66,8 +66,11 @@ public class Utils {
         // return current duration in milliseconds
         return currentDuration * 1000;
     }
+<<<<<<< HEAD
 
     public static String getContentFormUrl(String url) {
         return "";
     }
+=======
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
 }

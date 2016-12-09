@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
 
     <!-- Base application theme. -->
@@ -9,3 +10,16 @@
     </style>
 
 </resources>
+=======
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
+>>>>>>> cd54f619a4c3a0e5beff79fec1069729482661ab
