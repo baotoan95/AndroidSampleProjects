@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnReset.setOnClickListener(this);
 
         // Create count down
-        this.countDownTimer = new CountDownTimer(1000000000, 1000) {
+        this.countDownTimer = new CountDownTimer(999999999, 1000) {
             @Override
             public void onTick(long l) {
                 txtTimer.setText("Timer: " + timeCount++);
