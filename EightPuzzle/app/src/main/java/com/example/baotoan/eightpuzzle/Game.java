@@ -17,7 +17,6 @@ public class Game {
     private final int MATRIX_SIZE = 3;
     private Context context;
     private int count;
-    private int timeCount;
     private boolean win;
     private Button[] buttons;
     private List<Integer> cells;
@@ -36,7 +35,6 @@ public class Game {
 
     public void newGame() {
         this.count = 0;
-        this.timeCount = 0;
         this.win = false;
         this.cells = new ArrayList<>();
         this.mappedView = new int[MATRIX_SIZE + 2][MATRIX_SIZE + 2];
@@ -113,13 +111,16 @@ public class Game {
                     posX = i - 1;
                     posY = j - 1;
 
-                    // Count
+                    // Update counter
                     count++;
                     ((MainActivity)context).setCount(count);
 
                     // check win
                     if(checkWin()) {
-                        Toast.makeText(context, "You win!!!", Toast.LENGTH_LONG);
+                        // Stop count down
+                        ((MainActivity)context).stopCountDown();
+
+                        Toast.makeText(context, "You win!!!", Toast.LENGTH_LONG).show();
                     }
                     return;
                 }
