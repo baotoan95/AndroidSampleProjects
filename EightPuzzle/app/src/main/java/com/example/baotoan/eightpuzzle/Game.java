@@ -1,6 +1,7 @@
 package com.example.baotoan.eightpuzzle;
 
 import android.content.Context;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.Toast;
@@ -21,7 +22,7 @@ public class Game {
     private Button[] buttons;
     private List<Integer> cells;
     private int[][] mappedView;
-    private Controller controller;
+    private View.OnClickListener controller;
 
     // Space position
     private int posX, posY;
