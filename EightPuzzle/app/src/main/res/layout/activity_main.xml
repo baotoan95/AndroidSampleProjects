@@ -35,7 +35,8 @@
                 android:id="@+id/txt_timer"
                 android:textStyle="normal|bold"
                 android:fontFamily="cursive"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textAlignment="viewStart" />
 
             <TextView
                 android:layout_width="0dp"
@@ -47,7 +48,8 @@
                 android:id="@+id/txt_counter"
                 android:textStyle="normal|bold"
                 android:fontFamily="cursive"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:text="Reset"
