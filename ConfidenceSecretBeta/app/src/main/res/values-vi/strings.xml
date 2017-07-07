@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConfidenceSecretBeta</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="navigation_drawer_close"></string>
+    <string name="rate_dialog_cancel">Nhắc lại sau</string>
+    <string name="rate_dialog_message">\"Nếu bạn thích ứng dụng này, đừng quên rate cho chúng tôi 5 sao nhé!</string>
+    <string name="rate_dialog_no">Không, cảm ơn</string>
+    <string name="rate_dialog_ok">Rate ngay</string>
+    <string name="rate_dialog_title">Rate</string>
+    <string name="st_about">Thông tin ứng dụng</string>
+    <string name="st_notification">Thông báo</string>
+    <string name="st_profile">Hồ sơ của bạn</string>
+    <string name="st_rating">Đánh giá</string>
+    <string name="st_report">Báo cáo</string>
+    <string name="st_setting_lang_title">Ngôn ngữ</string>
+    <string name="st_setting_sc_encrypt">Mã hoá nội dung</string>
+    <string name="st_setting_sc_enlock">Khoá ứng dụng</string>
+    <string name="st_setting_sc_title">Bảo mật</string>
+    <string name="st_settings">Cài đặt</string>
+    <string name="st_share">Chia sẻ</string>
+    <string name="st_sync">Đồng bộ</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        app:srcCompat="@drawable/diary"
+        android:id="@+id/app_avatar"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:text="Collect the moments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/app_desc"
+        android:textStyle="normal|italic"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="ConfidenceSecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_name"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/app_avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

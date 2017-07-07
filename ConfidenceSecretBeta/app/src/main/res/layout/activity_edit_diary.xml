@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/diary_detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f56969">
+
+            <TextView
+                android:id="@+id/month_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1dp"
+                android:text="July | 2017"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/day_of_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/month_year"
+                android:paddingBottom="0dp"
+                android:paddingTop="1dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weekday_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/day_of_month"
+                android:text="Saturday 12:00"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/weekday_time"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="2dp"
+                    android:text="Snowy"
+                    android:textColor="#fff"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:text="Tra Tan - Duc Linh - Binh Thuan"
+                    android:textColor="#fff"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/linebook"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:weightSum="10">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="The title"
+                    android:ems="10"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:id="@+id/editText"
+                    android:layout_weight="4" />
+
+                <Spinner
+                    android:id="@+id/weather_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="3">
+
+                </Spinner>
+                <Spinner
+                    android:id="@+id/mood_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="3">
+                </Spinner>
+            </LinearLayout>
+
+            <com.confidence.btit95.confidencesecretbeta.components.NoteEditor
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:gravity="top"
+                android:hint="The content here"
+                android:textStyle="italic"
+                android:textSize="13sp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:ems="10"
+                android:typeface="serif"
+                android:id="@+id/diary_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f56969"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_location_on_white_18dp"
+                android:id="@+id/btn_location"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_satellite_white_18dp"
+                android:id="@+id/btn_picture"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_delete_white_18dp"
+                android:id="@+id/btn_trash"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

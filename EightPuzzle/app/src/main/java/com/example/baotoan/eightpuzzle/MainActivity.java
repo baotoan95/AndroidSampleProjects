@@ -5,12 +5,10 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Game game;
-    private GridLayout girdLayout;
     private Button btnReset;
     private TextView txtCounter, txtTimer;
     private CountDownTimer countDownTimer;
