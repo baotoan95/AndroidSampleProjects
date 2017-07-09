@@ -3,6 +3,7 @@ package com.confidence.btit95.confidencesecretbeta.security;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.support.multidex.MultiDex;
 
 import com.confidence.btit95.confidencesecretbeta.ConSecretPinActivity;
 import com.confidence.btit95.confidencesecretbeta.R;
@@ -16,6 +17,12 @@ public class AppSecurity extends Application {
     public static boolean SECURITY_ENABLED = false;
     private final static String LOCK = "LOCK";
     private static SharedPreferences sharedPreferences;
+
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+        MultiDex.install(this);
+    }
 
     @Override
     public void onCreate() {

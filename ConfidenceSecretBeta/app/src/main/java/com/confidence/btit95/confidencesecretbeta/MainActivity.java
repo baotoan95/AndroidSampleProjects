@@ -139,9 +139,9 @@ public class MainActivity extends PinCompatActivity
         if (id == R.id.nav_notification) {
             // Handle the camera action
         } else if (id == R.id.nav_profile) {
-
+            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         } else if (id == R.id.nav_sync_cloud) {
-
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
         } else if (id == R.id.nav_settings) {
             Intent settingIntent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(settingIntent);

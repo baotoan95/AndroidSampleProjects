@@ -30,7 +30,7 @@
             android:background="#f56969">
 
             <TextView
-                android:id="@+id/month_year"
+                android:id="@+id/txt_month_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -43,12 +43,12 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/day_of_month"
+                android:id="@+id/txt_day_of_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/month_year"
+                android:layout_below="@+id/txt_month_year"
                 android:paddingBottom="0dp"
                 android:paddingTop="1dp"
                 android:text="2"
@@ -58,12 +58,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/weekday_time"
+                android:id="@+id/txt_weekday_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/day_of_month"
+                android:layout_below="@+id/txt_day_of_month"
                 android:text="Saturday 12:00"
                 android:textAlignment="center"
                 android:textColor="#fff"
@@ -74,30 +74,42 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/weekday_time"
+                android:layout_below="@+id/txt_weekday_time"
                 android:orientation="horizontal"
-                android:paddingBottom="5dp">
+                android:paddingBottom="5dp"
+                android:gravity="center|center_vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_snow_18_white"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/ic_weather"/>
 
                 <TextView
-                    android:id="@+id/weather"
+                    android:text="Undefined"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:paddingRight="2dp"
-                    android:text="Snowy"
-                    android:textColor="#fff"
-                    android:textSize="9sp" />
+                    android:textSize="10sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/txt_weather" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    app:srcCompat="@drawable/ic_location_on_white_18dp"
+                    android:id="@+id/ic_address" />
 
                 <TextView
-                    android:id="@+id/location"
+                    android:text="Undefined"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:paddingLeft="2dp"
-                    android:text="Tra Tan - Duc Linh - Binh Thuan"
-                    android:textColor="#fff"
-                    android:textSize="9sp" />
+                    android:textSize="10sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/txt_address" />
+
             </LinearLayout>
 
         </RelativeLayout>
@@ -126,23 +138,25 @@
                     android:ems="10"
                     android:typeface="serif"
                     android:textStyle="bold"
-                    android:id="@+id/editText"
+                    android:id="@+id/tf_diary_title"
                     android:layout_weight="4" />
 
                 <Spinner
                     android:id="@+id/weather_spinner"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:layout_height="match_parent"
-                    android:paddingLeft="2dp"
                     android:background="@android:color/transparent"
                     android:layout_weight="3">
 
                 </Spinner>
                 <Spinner
                     android:id="@+id/mood_spinner"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:layout_height="match_parent"
-                    android:paddingLeft="2dp"
                     android:background="@android:color/transparent"
                     android:layout_weight="3">
                 </Spinner>
@@ -161,7 +175,7 @@
                 android:paddingRight="30dp"
                 android:ems="10"
                 android:typeface="serif"
-                android:id="@+id/diary_content" />
+                android:id="@+id/tf_diary_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -185,8 +199,17 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_satellite_white_18dp"
-                android:id="@+id/btn_picture"
+                android:background="@drawable/ic_add_a_photo_white_18dp"
+                android:id="@+id/btn_take_pic"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_perm_media_white_18dp"
+                android:id="@+id/btn_gallery"
                 android:layout_marginLeft="20dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />

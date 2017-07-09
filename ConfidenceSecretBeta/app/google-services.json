@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1082996835673",
+    "project_id": "confidencesecret-173106"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082996835673:android:ab50aa956ec57eca",
+        "android_client_info": {
+          "package_name": "com.confidence.btit95.confidencesecretbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082996835673-c9pdv90unkk5tphkj96emnc746vdqus9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1082996835673-boc7kpdpitpmhgp3enulmtdka63vussd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.confidence.btit95.confidencesecretbeta",
+            "certificate_hash": "e3705b888da3f19c896018b5213149ad6a899b23"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_-jTARWIxb2ZF8MqGHQx6LowP9eKC2fA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

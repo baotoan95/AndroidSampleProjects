@@ -23,4 +23,7 @@
     <string name="st_setting_sc_enlock">Enable lock</string>
     <string name="st_setting_sc_encrypt">Encrypt content</string>
     <string name="st_setting_lang_title">Language</string>
+
+    <string name="google_map_api_key">AIzaSyDvCosN-ERLGio0pRq2qE8vhyDK0_Eiyks</string>
+    <string name="facebook_app_id">705955636263423</string>
 </resources>

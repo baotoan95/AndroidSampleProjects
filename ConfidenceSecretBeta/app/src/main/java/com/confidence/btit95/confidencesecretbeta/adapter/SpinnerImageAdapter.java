@@ -35,7 +35,7 @@ public class SpinnerImageAdapter extends ArrayAdapter<SpinnerImageItem> {
         View itemView = layoutInflater.inflate(groupId, parent, false);
 
         ImageView imageView =  (ImageView) itemView.findViewById(R.id.spinner_avatar);
-        imageView.setImageResource(spinners.get(position).getImage());
+        imageView.setImageResource(spinners.get(position).getImages().get("ic_24"));
         return itemView;
     }
 

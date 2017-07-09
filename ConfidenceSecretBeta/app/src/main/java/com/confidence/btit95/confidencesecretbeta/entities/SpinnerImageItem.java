@@ -1,16 +1,20 @@
 package com.confidence.btit95.confidencesecretbeta.entities;
 
+import java.util.Map;
+
 /**
  * Created by baotoan on 02/07/2017.
  */
 
 public class SpinnerImageItem {
     private String name;
-    private Integer image;
+    private Map<String, Integer> images;
+    private String type;
 
-    public SpinnerImageItem(String name, Integer image) {
+    public SpinnerImageItem(String name, Map<String, Integer> images, String type) {
         this.name = name;
-        this.image = image;
+        this.images = images;
+        this.type = type;
     }
 
     public String getName() {
@@ -21,11 +25,19 @@ public class SpinnerImageItem {
         this.name = name;
     }
 
-    public Integer getImage() {
-        return image;
+    public Map<String, Integer> getImages() {
+        return images;
     }
 
-    public void setImage(Integer image) {
-        this.image = image;
+    public void setImages(Map<String, Integer> images) {
+        this.images = images;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
