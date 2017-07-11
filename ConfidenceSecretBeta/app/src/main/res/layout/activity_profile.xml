@@ -10,7 +10,7 @@
         <ImageView
             android:id="@+id/header_cover_image"
             android:layout_width="match_parent"
-            android:src="@drawable/wallpaper"
+            android:background="@drawable/wallpaper"
             android:layout_height="150dp" />
 
         <RelativeLayout
@@ -27,23 +27,23 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
 
-            <ImageView
-                android:id="@+id/add_friend"
+            <ImageButton
+                android:id="@+id/btn_logout"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="16dp"
+                android:background="@drawable/ic_power_settings_new_white_24dp"
                 android:layout_marginTop="16dp"
-                android:layout_toLeftOf="@+id/drop_down_option_menu"
-                android:src="@drawable/ic_portrait_black_18dp" />
+                android:layout_toLeftOf="@+id/btn_sync" />
 
-            <ImageView
-                android:id="@+id/drop_down_option_menu"
+            <ImageButton
+                android:id="@+id/btn_sync"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/ic_cloud_upload_black_18dp" />
+                android:background="@drawable/ic_cloud_upload_white_24dp" />
 
             <TextView
                 android:id="@+id/user_profile_name"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="76dp"
-                android:text="Bao Toan"
+                android:text="Undefined"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -63,7 +63,7 @@
                 android:layout_below="@+id/user_profile_name"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:text="Java Developer"
+                android:text="Undefined"
                 android:textColor="#fff"
                 android:textSize="14sp" />
 
@@ -89,6 +89,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/user_profile_email"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -96,9 +97,10 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Email: baotoan.95@gmail.com" />
+                android:text="Email: undefined" />
 
             <TextView
+                android:id="@+id/user_profile_phone"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -108,9 +110,10 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Phone: +84 164 900 1142" />
+                android:text="Phone: undefined" />
 
             <TextView
+                android:id="@+id/user_profile_count"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -118,9 +121,10 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Total diaries: 2000" />
+                android:text="Total diaries: undefined" />
 
             <TextView
+                android:id="@+id/user_profile_follow"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -130,9 +134,10 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Follows: 1323" />
+                android:text="Follows: undefined" />
 
             <TextView
+                android:id="@+id/user_profile_social"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -140,11 +145,9 @@
                 android:clickable="true"
                 android:elevation="4dp"
                 android:padding="20dp"
-                android:text="Social url: fb/btit95.com" />
+                android:text="Social url: undefined" />
 
         </LinearLayout>
-
-
 
     </RelativeLayout>
 

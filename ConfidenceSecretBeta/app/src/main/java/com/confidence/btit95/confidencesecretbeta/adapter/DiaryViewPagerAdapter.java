@@ -71,7 +71,6 @@ public class DiaryViewPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        Log.i("Position", String.valueOf(position));
         View view = layoutInflater.inflate(R.layout.list, container, false);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.VERTICAL, false);
